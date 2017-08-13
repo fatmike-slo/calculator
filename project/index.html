@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/style.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1 col-sm-3 col-md-4">
+                    empty
+                </div>
+
+                <div id="calcFrame" class="col-xs-10 col-sm-6 col-md-4">
+                    <div id="displayWrapper" class="row">
+
+
+                        <div  id="upperDisplay">
+                            <span id="history" class="display" type="text"></span>
+                        </div>
+
+                        <div  id="lowerDisplay">
+                            <span id="result" class="display" type="text"></span>
+                        </div>
+
+
+                    </div>
+
+           
+                <div id="keyboardWrapper" class="row">
+                    <div class="text-center">
+                        <a id="btnDelete" href="#">
+                            <div class="operator col-xs-3 col-md-3">
+                                <span class="spanDel">del</span>
+                            </div>
+                        </a>
+                        <a id="btnReset" href="#">
+                            <div class="operator col-xs-3 col-md-3">
+                                <span class="spanDel">AC</span>
+                            </div>
+                        </a>
+                        <a id="btnDivision" href>
+                            <div class="operator col-xs-3 col-md-3">
+                                <span>&divide;</span>
+                            </div>
+                        </a>
+                        <a id="btnProduct" href="#">
+                            <div class="operator col-xs-3 col-md-3">
+                                <span>&times;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a id="btnSeven" href="#">
+                            <div class="col-xs-3 col-md-3">
+                                <span>7</span>
+                            </div>
+                        </a>
+                        <a id="btnEight" href="#">
+                            <div class="col-xs-3 col-md-3">
+                                <span>8</span>
+                            </div>
+                        </a>
+                        <a id="btnNine" href="#">
+                            <div class="col-xs-3 col-md-3">
+                                <span>9</span>
+                            </div>
+                        </a>
+                        <a id="btnMinus" href="#">
+                            <div class="operator col-xs-3 col-md-3">
+                                <span>&minus;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a id="btnFour" href="#">
+                            <div class="col-xs-3 col-md-3">
+                                <span>4</span>
+                            </div>
+                        </a>
+                        <a id="btnFive" href="#">
+                            <div class="col-xs-3 col-md-3">
+                                <span>5</span>
+                            </div>
+                        </a>
+                        <a id="btnSix" href="#">
+                            <div class="col-xs-3 col-md-3">
+                                <span>6</span>
+                            </div>
+                        </a>
+                        <a id="btnSum" href="#">
+                            <div class="operator col-xs-3 col-md-3">
+                                <span>&plus;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a id="btnOne" href="#">
+                            <div class="col-xs-3 col-md-3">
+                                <span>1</span>
+                            </div>
+                        </a>
+                        <a id="btnTwo" href="#">
+                            <div class="col-xs-3 col-md-3">
+                                <span>2</span>
+                            </div>
+                        </a>
+                        <a id="btnThree" href="#">
+                            <div class="col-xs-3 col-md-3">
+                                <span>3</span>
+                            </div>
+                        </a>
+                        <a id="btnDisplayArray" href="#">
+                            <div class="operator col-xs-3 col-md-3">
+                                <span>C</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a id="btnNegate" href="#">
+                            <div class="operator col-xs-3 col-md-3">
+                                <span>+-</span>
+                            </div>
+                        </a>
+                        <a id="btnZero" href="#">
+                            <div class="col-xs-3 col-md-3">
+                                <span>0</span>
+                            </div>
+                        </a>
+                        <a id="btnFloatSwitch" href="#">
+                            <div class="col-xs-3 col-md-3">
+                                <span>,</span>
+                            </div>
+                        </a>
+                        <a id="btnResult" href="#">
+                            <div class="equals col-xs-3 col-md-3">
+                                <span>=</span>
+                            </div>
+                        </a>
+                        <input type="button" id="test" value="jebemti" onclick="test('U kurac');">
+                        <input type="button" id="a" value="a" onclick="add('a');"/>
+                        <input type="button" id="b" value="b" onclick="add('b');"/>
+                        <input type="button" id="reset" value="reset" onclick="reset('');"/>
+                        <input type="button" id="resetOne" value="reset one" onclick="resetOne();"/>
+                        <input id="output" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-1 col-sm-3 col-md-4">
+                empty
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="lib/js/app.js"></script>
+</body>
+
+</html>
+
+<!-- <div id="displayArea"class="row" style="border: 1px solid black;">
+                        <input id="display" type="text" />
+                        <input id="history" type="text" />
+                        <input id="result" type="text" />
+                        <br>
+                        <br>
+                    </div>
+   -->
+
+<!-- <div class="row text-center">
+                        <button id="btnReset" class="btn btn-danger btn-lg">C</button>
+                        <button id="btnNegate" class="btn btn-default btn-lg">+-</button>
+                        <button id="btnDelete" class="btn btn-default btn-lg">Delete</button>
+                    </div>
+                    <div class="row text-center">
+                        <button id="btnOne" class="btn btn-default btn-lg">1</button>
+                        <button id="btnTwo" class="btn btn-default btn-lg">2</button>
+                        <button id="btnThree" class="btn btn-default btn-lg">3</button>
+                        <button id="btnDivision" class="btn btn-warning btn-lg">&nbsp;/&nbsp;&nbsp;</button>
+                    </div>
+                    <div class="row text-center">
+                        <button id="btnFour" class="btn btn-default btn-lg">4</button>
+                        <button id="btnFive" class="btn btn-default btn-lg">5</button>
+                        <button id="btnSix" class="btn btn-default btn-lg">6</button>
+                        <button id="btnProduct" class="btn btn-warning btn-lg">&nbsp;x&nbsp;</button>
+                    </div>
+                    <div class="row text-center">
+                        <button id="btnSeven" class="btn btn-default btn-lg">7</button>
+                        <button id="btnEight" class="btn btn-default btn-lg">8</button>
+                        <button id="btnNine" class="btn btn-default btn-lg">9</button>
+                        
+                        <button id="btnSum" class="btn btn-warning btn-lg">&nbsp;+&nbsp;</button>
+                    </div>
+                    <div class="row text-center">
+                        <button  class="btn btn-primary btn-lg">,</button>
+                        <button id="btnZero" class="btn btn-default btn-lg">0</button>
+                        <button id="btnResult" class="btn btn-success btn-lg">=&nbsp;</button>
+                        <button id="btnMinus" class="btn btn-warning btn-lg">&nbsp;-&nbsp;</button>
+                    </div> -->
+<!-- 
+                    <br>
+                    <div class="row text-center">
+                        <button id="btnDisplayArray" class="btn btn-default btn-lg">Display Current Info</button> -->
